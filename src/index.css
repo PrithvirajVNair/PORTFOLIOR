@@ -7,6 +7,7 @@ html,body {
   animation: moveBackground 4s linear infinite;
   font-family: "Orbitron", sans-serif;
   scroll-behavior: smooth;
+  min-width: 320px;
 }
 
 /* Animation to move the background upward infinitely */
@@ -28,4 +29,19 @@ html,body {
 ::-webkit-scrollbar-thumb{
   background-color: #FFF085;
   border-radius: 20px;
+}
+/* Change toast progress bar color */
+.toast-success .Toastify__progress-bar {
+  background: #FFF085 !important; /* Change to your color */
+}
+/* Background behind the progress bar */
+.toast-success .Toastify__progress-bar-theme--dark {
+  background: #fff18568 !important;  /* your custom background */
+}
+/* Success Tick Icon Color */
+.toast-success .Toastify__toast-icon > svg {
+  fill: #FFF085 !important; /* your color */
+}
+.text-glow {
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.7);
 }

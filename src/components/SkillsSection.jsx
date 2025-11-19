@@ -40,17 +40,17 @@ const SkillsSection = () => {
     ]
 
     return (
-        <div className='md:py-10 lg:p-20 text-white'>
+        <div className='px-2 md:py-10 lg:p-20 pt-15 sm:pt-0 text-white'>
             <div>
                 <h2 className='text-center text-yellow-200 text-xl'>SKILLS</h2>
                 <h2 className='text-center text-gray-400 text-sm'>Tools & Tech</h2>
             </div>
-            <div className='grid grid-cols-3 max-sm:mx-1 sm:grid-cols-5 md:grid-cols-6 lg:grid-cols-8 py-10'>
+            <div className='grid grid-cols-3 sm:grid-cols-5 md:grid-cols-6 lg:grid-cols-8 py-10'>
                 {
                     skills.map((skill) => (
-                        <div key={skill.name} className='flex sm:flex-col items-center border border-yellow-200/50 m-2 md:m-3 rounded bg-yellow-200/10 py-1 max-sm:px-1  hover:text-yellow-200 hover:shadow-lg hover:shadow-yellow-200/30 text-[9px] sm:text-sm lg:text-base' style={{backdropFilter:'blur(3px)'}}>
+                        <div key={skill.name} className='flex flex-col items-center border border-white/50 m-3 rounded bg-white/10 py-1  hover:text-yellow-200 hover:shadow-lg hover:shadow-yellow-200/30 text-[9px] sm:text-sm lg:text-base aspect-5/4' style={{backdropFilter:'blur(3px)'}}>
                             <div>
-                                <img className='max-sm:w-4 sm:px-6' src={skill.PIC} alt="" />
+                                <img className='px-6' src={skill.PIC} alt="" />
                             </div>
                             <p className='p-1'>{skill.name}</p>
                         </div>

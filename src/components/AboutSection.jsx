@@ -2,13 +2,13 @@ import React from 'react'
 
 const AboutSection = () => {
     return (
-        <div id='about' className='text-white p-5 md:p-10 lg:p-20'>
+        <div id='about' className='text-white pt-15 sm:pt-0 p-5 md:p-10 lg:p-20'>
             <div>
                 <h2 className='text-center text-yellow-200 text-xl'>ABOUT ME</h2>
             </div>
-            <div className='grid md:grid-cols-2 py-10 md:py-10 lg:py-20 text-justify'>
-                <div className='leading-8 md:p-5 text-xs sm:text-sm md:text-base'>
-                    <p className='mb-5'>
+            <div className='grid md:grid-cols-2 py-10 lg:py-20 text-justify'>
+                <div className=' md:p-5 text-xs sm:text-sm md:text-base text-gray-400 font-semibold'>
+                    <p className='mb-10'>
                         Hi there! I'm <span className='text-yellow-200'>Prithviraj V Nair</span>, a Full Stack Developer who loves
                         building powerful,
                         visually
