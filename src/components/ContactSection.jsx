@@ -30,8 +30,9 @@ const ContactSection = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-
-        emailjs
+        const {name,email,message} = data
+        if(name || email|| message){
+            emailjs
             .send(
                 "service_g2iw1g5",
                 "template_0hwmakg",
@@ -60,6 +61,10 @@ const ContactSection = () => {
                 toast.error("Failed to send message!");
                 console.log(error);
             })
+        }
+        else{
+            toast.error("Please Fill The Details")
+        }
     };
 
     return (
@@ -99,7 +104,7 @@ const ContactSection = () => {
 
                         <button
                             type="submit"
-                            className="p-2 bg-yellow-200/50 text-white rounded hover:bg-yellow-300/50"
+                            className="p-2 bg-yellow-200/50 text-white rounded hover:bg-yellow-200/60 active:transform active:scale-95 duration-100 cursor-pointer"
                         >
                             Send Message
                         </button>
@@ -118,7 +123,7 @@ const ContactSection = () => {
                     <div className='xl:grid grid-cols-2'>
                         <div className='bg-white/10 flex flex-col justify-center items-center p-5 md:m-5'>
                             <h2 className='px-10 text-center py-5 text-glow font-bold md:text-base text-sm'>Lets Work Together on Your Next Project</h2>
-                            <button className='py-2 bg-yellow-200/20 px-3 rounded flex justify-center items-center text-sm' onClick={copyClipboard}><FontAwesomeIcon icon={faCopy} className='me-3' />Email</button>
+                            <button className='py-2 bg-yellow-200/20 px-3 rounded flex justify-center items-center text-sm cursor-pointer active:transform active:scale-96 duration-100' onClick={copyClipboard}><FontAwesomeIcon icon={faCopy} className='me-3' />Email</button>
                         </div>
                         <div className='bg-white/10 md:m-5 flex flex-col justify-center items-center p-5'>
                             <h2 className='md:text-2xl'>Socials</h2>
