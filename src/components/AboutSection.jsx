@@ -1,4 +1,5 @@
 import React from 'react'
+import ABOUT from '../assets/about.png'
 
 const AboutSection = () => {
     return (
@@ -27,7 +28,7 @@ const AboutSection = () => {
                     </p>
                 </div>
                 <div>
-
+                    <img className='w-full' src={ABOUT} alt="" />
                 </div>
             </div>
         </div>

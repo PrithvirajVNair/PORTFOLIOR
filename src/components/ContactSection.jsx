@@ -123,15 +123,15 @@ const ContactSection = () => {
                     <div className='xl:grid grid-cols-2'>
                         <div className='bg-white/10 flex flex-col justify-center items-center p-5 md:m-5'>
                             <h2 className='px-10 text-center py-5 text-glow font-bold md:text-base text-sm'>Lets Work Together on Your Next Project</h2>
-                            <button className='py-2 bg-yellow-200/20 px-3 rounded flex justify-center items-center text-sm cursor-pointer active:transform active:scale-96 duration-100' onClick={copyClipboard}><FontAwesomeIcon icon={faCopy} className='me-3' />Email</button>
+                            <button className='mt-1 py-2 bg-yellow-200/20 px-3 rounded flex justify-center items-center text-sm cursor-pointer active:transform active:scale-96 duration-100' onClick={copyClipboard}><FontAwesomeIcon icon={faCopy} className='me-3' />Email</button>
                         </div>
                         <div className='bg-white/10 md:m-5 flex flex-col justify-center items-center p-5'>
                             <h2 className='md:text-2xl'>Socials</h2>
-                            <div className='pt-5'>
+                            <div className='p-5'>
                                     <a href="https://www.linkedin.com/in/prithvirajvnair" target='_blank' className='text-white text-sm md:text-2xl border p-1 rounded me-2 hover:bg-yellow-200 hover:text-black'><FontAwesomeIcon icon={faLinkedinIn} /></a>
                                     <a href="https://github.com/PrithvirajVNair" target='_blank' className='text-white text-sm md:text-2xl border p-1 rounded mx-2 hover:bg-yellow-200 hover:text-black'><FontAwesomeIcon icon={faGithub} /></a>
                                     <a href="https://x.com/PrithvirajVNair" target='_blank' className='text-white text-sm md:text-2xl border p-1 rounded mx-2 hover:bg-yellow-200 hover:text-black'><FontAwesomeIcon icon={faXTwitter} /></a>
-                                    <a href="mailto:prithvirajvnair.pvr@gmail.com" className='text-white text-sm md:text-2xl border p-1 rounded mx-2 hover:bg-yellow-200 hover:text-black'><FontAwesomeIcon icon={faEnvelope} /></a>
+                                    {/* <a href="mailto:prithvirajvnair.pvr@gmail.com" className='text-white text-sm md:text-2xl border p-1 rounded mx-2 hover:bg-yellow-200 hover:text-black'><FontAwesomeIcon icon={faEnvelope} /></a> */}
                                   </div>
                         </div>
                     </div>

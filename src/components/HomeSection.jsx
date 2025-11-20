@@ -19,7 +19,7 @@ const HomeSection = () => {
         <a href="https://www.linkedin.com/in/prithvirajvnair" target='_blank' className='text-white text-sm md:text-2xl border p-1 rounded me-2 hover:bg-yellow-200 hover:text-black'><FontAwesomeIcon icon={faLinkedinIn} /></a>
         <a href="https://github.com/PrithvirajVNair" target='_blank' className='text-white text-sm md:text-2xl border p-1 rounded mx-2 hover:bg-yellow-200 hover:text-black'><FontAwesomeIcon icon={faGithub} /></a>
         <a href="https://x.com/PrithvirajVNair" target='_blank' className='text-white text-sm md:text-2xl border p-1 rounded mx-2 hover:bg-yellow-200 hover:text-black'><FontAwesomeIcon icon={faXTwitter} /></a>
-        <a href="mailto:prithvirajvnair.pvr@gmail.com" className='text-white text-sm md:text-2xl border p-1 rounded mx-2 hover:bg-yellow-200 hover:text-black'><FontAwesomeIcon icon={faEnvelope} /></a>
+        {/* <a href="mailto:prithvirajvnair.pvr@gmail.com" className='text-white text-sm md:text-2xl border p-1 rounded mx-2 hover:bg-yellow-200 hover:text-black'><FontAwesomeIcon icon={faEnvelope} /></a> */}
       </div>
     </div>
   )
