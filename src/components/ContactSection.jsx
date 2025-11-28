@@ -31,7 +31,7 @@ const ContactSection = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         const {name,email,message} = data
-        if(name || email|| message){
+        if(name && email && message){
             emailjs
             .send(
                 "service_g2iw1g5",
