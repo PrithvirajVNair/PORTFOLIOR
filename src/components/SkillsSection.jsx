@@ -16,6 +16,7 @@ import MDB from '../assets/icons8-mongodb-480.png'
 import JIRA from '../assets/icons8-jira-480.png'
 import AJS from '../assets/icons8-angular-480.png'
 import MUI from '../assets/icons8-material-ui-480.png'
+import GlowCard from './GlowCard'
 
 const SkillsSection = () => {
 
@@ -48,12 +49,14 @@ const SkillsSection = () => {
             <div className='grid grid-cols-3 sm:grid-cols-5 md:grid-cols-6 lg:grid-cols-8 py-10'>
                 {
                     skills.map((skill) => (
-                        <div key={skill.name} className='flex flex-col items-center border border-white/50 m-3 rounded bg-white/10 py-1  hover:text-yellow-200 hover:shadow-lg hover:shadow-yellow-200/30 text-[9px] sm:text-sm lg:text-base aspect-5/4' style={{backdropFilter:'blur(3px)'}}>
-                            <div>
-                                <img className='px-6' src={skill.PIC} alt="" />
+                        <GlowCard key={skill.name}>
+                            <div className='flex flex-col items-center justify-center py-1 text-[9px] md:text-sm lg:text-md'>
+                                <div>
+                                    <img className='px-6' src={skill.PIC} alt="" />
+                                </div>
+                                <p className='p-1'>{skill.name}</p>
                             </div>
-                            <p className='p-1'>{skill.name}</p>
-                        </div>
+                        </GlowCard>
                     ))
                 }
             </div>
@@ -62,3 +65,14 @@ const SkillsSection = () => {
 }
 
 export default SkillsSection
+
+
+
+// skills.map((skill) => (
+//                         <GlowCard key={skill.name} className='flex flex-col items-center border border-white/50 m-3 rounded bg-white/10 py-1  hover:text-yellow-200 hover:shadow-lg hover:shadow-yellow-200/30 text-[9px] sm:text-sm lg:text-base aspect-5/4' style={{backdropFilter:'blur(3px)'}}>
+//                             <div>
+//                                 <img className='px-6' src={skill.PIC} alt="" />
+//                             </div>
+//                             <p className='p-1'>{skill.name}</p>
+//                         </GlowCard>
+//                     ))

@@ -68,9 +68,8 @@ const WorkSection = () => {
             bTheme: 'text-purple-200/10',
             shadow: 'shadow-purple-200/50',
             imgWidth: 'w-[200px]',
-            hImgWidth: 'w-[250px]',
+            hImgWidth: 'hover:w-[250px]',
             mImgWidth: 'w-[100px]',
-            hMImgWidth: 'w-[150px]'
         },
         {
             img: W2,
@@ -107,7 +106,7 @@ const WorkSection = () => {
             bTheme: 'text-cyan-200/10',
             shadow: 'shadow-cyan-200/50',
             imgWidth: 'w-[400px]',
-            hImgWidth: 'w-[450px]'
+            hImgWidth: 'hover:w-[450px]'
         },
     ]
 
@@ -145,16 +144,16 @@ const WorkSection = () => {
                                     </div>
                                 </div>
                                 <div className={`hidden border m-5 rounded ${item.bTheme} ${item.bgTheme} mt-20 justify-center md:flex items-center backdrop-blur-[1px]`}>
-                                    <img className={`rounded ${item.imgWidth} hover:${item.hImgWidth} transition-all duration-300 hover:shadow-lg md:hover:${item.shadow}`} src={item.img} alt="No Image" />
+                                    <img className={`rounded ${item.imgWidth} ${item.hImgWidth} transition-all duration-300 hover:shadow-lg ${item.shadow}`} src={item.img} alt="No Image" />
                                 </div>
                                 <div className={`md:hidden border m-5 rounded ${item.bTheme} ${item.bgTheme} md:mt-20 justify-center flex items-center backdrop-blur-[1px]`}>
-                                    <img className={`p-5 rounded ${item.mImgWidth} hover:${item.hMImgWidth} transition-all duration-300 hover:shadow-lg md:hover:${item.shadow}`} src={item.img} alt="No Image" />
+                                    <img className={`p-5 rounded ${item.mImgWidth}`} src={item.img} alt="No Image" />
                                 </div>
                             </React.Fragment>
                             :
                             <React.Fragment key={index}>
                                 <div className={`hidden border m-5 rounded ${item.bTheme} ${item.bgTheme} mt-20 justify-center md:flex items-center backdrop-blur-[1px]`}>
-                                    <img className={`rounded ${item.imgWidth} hover:${item.hImgWidth} transition-all duration-300 hover:shadow-lg hover:${item.shadow}`} src={item.img} alt="" />
+                                    <img className={`rounded ${item.imgWidth} ${item.hImgWidth} transition-all duration-300 hover:shadow-lg ${item.shadow}`} src={item.img} alt="" />
                                 </div>
                                 <div className='font-semibold'>
                                     <h2 className={`${item.textTheme} text-base md:text-3xl font-bold pt-10 md:pt-20`}>{item.title}</h2>
@@ -179,7 +178,7 @@ const WorkSection = () => {
                                     </div>
                                 </div>
                                 <div className={`md:hidden border m-5 rounded ${item.bTheme} ${item.bgTheme} md:mt-20 justify-center flex items-center backdrop-blur-[1px]`}>
-                                    <img className={`p-5 rounded ${item.mImgWidth} hover:${item.hMImgWidth} transition-all duration-300 hover:shadow-lg md:hover:shadow-cyan-200/50`} src={item.img} alt="" />
+                                    <img className={`p-5 rounded ${item.mImgWidth}`} src={item.img} alt="" />
                                 </div>
                             </React.Fragment>
                     ))}

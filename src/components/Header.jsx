@@ -19,12 +19,12 @@ const Header = () => {
 
     return (
         <nav className='fixed w-full z-999'>
-            <div className='flex text-white px-5 md:px-10 md:py-5 py-2 max-md:bg-white/5 max-md:backdrop-blur-[3px] justify-between md:justify-normal items-center max-md:border max-md:border-white/10'>
+            <div className='flex text-white px-5 md:px-10 md:py-5 py-2 max-md:bg-white/5 max-md:backdrop-blur-[3px] justify-between md:justify-normal items-center '>
                 <div style={{ fontFamily: '"Bebas Neue", sans-serif' }}>
                     <a className='text-2xl md:text-4xl' href="#home">PVN<span className='text-yellow-200'>.</span></a>
                 </div>
                 <div className='hidden sm:block absolute left-1/2 -translate-x-1/2'>
-                    <ul className='hidden md:flex justify-center items-center border border-white/20 h-15 rounded-lg bg-white/5 ' style={{ backdropFilter: 'blur(3px)' }} >
+                    <ul className='hidden md:flex justify-center items-center h-15 rounded-lg bg-white/5 ' style={{ backdropFilter: 'blur(4px)' }} >
                         {
                             navBarList.map((nav) => (
                                 <li key={nav.text} className='px-5 text-lg font-bold'>
@@ -43,10 +43,10 @@ const Header = () => {
                     <button onClick={toggleMenu} className='absolute' >{!menuOpen ? <FontAwesomeIcon icon={faBars} /> : <FontAwesomeIcon icon={faXmark} />}</button>
                 </div>
             </div>
-
-            <div className='grid grid-cols-5 text-yellow-200'>
+            {/* dropdown */}
+            <div className='grid grid-cols-5 text-yellow-200 mt-1'>
                 <div></div>
-                <ul className={`md:hidden ${menuOpen && 'border border-white/10'} backdrop-blur-sm bg-white/5 text-center rounded-2xl col-span-3 leading-8`}>
+                <ul className={`md:hidden ${menuOpen && ' border-white/10'} backdrop-blur-sm bg-white/5 text-center rounded-2xl col-span-3 leading-8`}>
                     {
                         menuOpen && (
                             navBarList.map((items, index) => (
