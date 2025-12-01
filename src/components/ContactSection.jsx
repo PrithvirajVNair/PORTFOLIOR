@@ -78,6 +78,8 @@ const ContactSection = () => {
                         <h1 className='text-2xl mb-5'>Get In <span className='text-yellow-200'>Touch</span></h1>
                         <label htmlFor="contact-name">Full Name</label>
                         <input
+                            required
+                            aria-label="Full Name"
                             id='contact-name'
                             type="text"
                             placeholder="John Doe"
@@ -87,6 +89,8 @@ const ContactSection = () => {
 
                         <label htmlFor="contact-email">Email</label>
                         <input
+                            required
+                            aria-label="Email Address"
                             id='contact-email'
                             type="email"
                             placeholder="johndoe@gmail.com"
@@ -96,6 +100,8 @@ const ContactSection = () => {
 
                         <label htmlFor="contact-message">Message</label>
                         <textarea
+                            required
+                            aria-label="Your Message"
                             id='contact-message'
                             placeholder="Hi! How Are You..?"
                             className="p-2 h-32 rounded bg-white/10 text-white"
@@ -113,7 +119,7 @@ const ContactSection = () => {
                 <div className='xl:grid grid-rows-2'>
                     <div className='xl:grid grid-rows-2'>
                         <div className='bg-white/10 mt-5 md:m-5 flex justify-center items-center'>
-                            <p className='text-center sm:text-3xl md:text-5xl p-5'>PRITHVIRAJ V NAIR</p>
+                            <p className='text-center sm:text-3xl md:text-5xl p-5' aria-label="Portfolio owner name">PRITHVIRAJ V NAIR</p>
                         </div>
                         <div className='bg-white/10 md:m-5 flex justify-center items-center p-5'>
                             <p className='text-center md:text-base text-sm'>Let's connect and create something futuristic.
@@ -123,15 +129,14 @@ const ContactSection = () => {
                     <div className='xl:grid grid-cols-2'>
                         <div className='bg-white/10 flex flex-col justify-center items-center p-5 md:m-5'>
                             <h2 className='px-10 text-center py-5 text-glow font-bold md:text-base text-sm'>Lets Work Together on Your Next Project</h2>
-                            <button className='mt-1 py-2 bg-yellow-200/20 px-3 rounded flex justify-center items-center text-sm cursor-pointer active:transform active:scale-96 duration-100' onClick={copyClipboard}><FontAwesomeIcon icon={faCopy} className='me-3' />Email</button>
+                            <button aria-label="Copy email address to clipboard" className='mt-1 py-2 bg-yellow-200/20 px-3 rounded flex justify-center items-center text-sm cursor-pointer active:transform active:scale-96 duration-100' onClick={copyClipboard}><FontAwesomeIcon icon={faCopy} className='me-3' />Email</button>
                         </div>
                         <div className='bg-white/10 md:m-5 flex flex-col justify-center items-center p-5'>
                             <h2 className='md:text-2xl'>Socials</h2>
                             <div className='p-5'>
-                                    <a href="https://www.linkedin.com/in/prithvirajvnair" target='_blank' className='text-white text-sm md:text-2xl border p-1 rounded me-2 hover:bg-yellow-200 hover:text-black'><FontAwesomeIcon icon={faLinkedinIn} /></a>
-                                    <a href="https://github.com/PrithvirajVNair" target='_blank' className='text-white text-sm md:text-2xl border p-1 rounded mx-2 hover:bg-yellow-200 hover:text-black'><FontAwesomeIcon icon={faGithub} /></a>
-                                    <a href="https://x.com/PrithvirajVNair" target='_blank' className='text-white text-sm md:text-2xl border p-1 rounded mx-2 hover:bg-yellow-200 hover:text-black'><FontAwesomeIcon icon={faXTwitter} /></a>
-                                    {/* <a href="mailto:prithvirajvnair.pvr@gmail.com" className='text-white text-sm md:text-2xl border p-1 rounded mx-2 hover:bg-yellow-200 hover:text-black'><FontAwesomeIcon icon={faEnvelope} /></a> */}
+                                    <a href="https://www.linkedin.com/in/prithvirajvnair" target='_blank' rel="noopener noreferrer" className='text-white text-sm md:text-2xl border p-1 rounded me-2 hover:bg-yellow-200 hover:text-black'><FontAwesomeIcon icon={faLinkedinIn} /></a>
+                                    <a href="https://github.com/PrithvirajVNair" target='_blank' rel="noopener noreferrer" className='text-white text-sm md:text-2xl border p-1 rounded mx-2 hover:bg-yellow-200 hover:text-black'><FontAwesomeIcon icon={faGithub} /></a>
+                                    <a href="https://x.com/PrithvirajVNair" target='_blank' rel="noopener noreferrer" className='text-white text-sm md:text-2xl border p-1 rounded mx-2 hover:bg-yellow-200 hover:text-black'><FontAwesomeIcon icon={faXTwitter} /></a>
                                   </div>
                         </div>
                     </div>

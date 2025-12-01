@@ -44,7 +44,7 @@ const SkillsSection = () => {
         <div className='px-2 md:py-10 lg:p-20 pt-15 sm:pt-0 text-white'>
             <div>
                 <h2 className='text-center text-yellow-200 text-xl'>SKILLS</h2>
-                <h2 className='text-center text-gray-400 text-sm'>Tools & Tech</h2>
+                <h3 className='text-center text-gray-400 text-sm'>Tools & Tech</h3>
             </div>
             <div className='grid grid-cols-3 sm:grid-cols-5 md:grid-cols-6 lg:grid-cols-8 py-10'>
                 {
@@ -52,7 +52,7 @@ const SkillsSection = () => {
                         <GlowCard key={skill.name}>
                             <div className='flex flex-col items-center justify-center py-1 text-[9px] md:text-sm lg:text-md'>
                                 <div>
-                                    <img className='px-6' src={skill.PIC} alt="" />
+                                    <img className='px-6' src={skill.PIC} alt={`${skill.name} logo`} />
                                 </div>
                                 <p className='p-1'>{skill.name}</p>
                             </div>

@@ -28,7 +28,7 @@ const AboutSection = () => {
                     </p>
                 </div>
                 <div>
-                    <img className='w-full' src={ABOUT} alt="" />
+                    <img className='w-full' src={ABOUT} alt="About Section Image" />
                 </div>
             </div>
         </div>

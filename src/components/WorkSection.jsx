@@ -114,7 +114,7 @@ const WorkSection = () => {
         <div id='work' className='pt-15 sm:pt-0 md:p-10 lg:p-20 text-white'>
             <div>
                 <h2 className='text-center text-yellow-200 text-xl'>WORKS</h2>
-                <h2 className='text-center text-gray-400 text-sm'>Featured Works</h2>
+                <h3 className='text-center text-gray-400 text-sm'>Featured Works</h3>
             </div>
             <div className='grid lg:grid-cols-2 p-5'>
                 {
@@ -144,16 +144,16 @@ const WorkSection = () => {
                                     </div>
                                 </div>
                                 <div className={`hidden border m-5 rounded ${item.bTheme} ${item.bgTheme} mt-20 justify-center md:flex items-center backdrop-blur-[1px]`}>
-                                    <img className={`rounded ${item.imgWidth} ${item.hImgWidth} transition-all duration-300 hover:shadow-lg ${item.shadow}`} src={item.img} alt="No Image" />
+                                    <img className={`rounded ${item.imgWidth} ${item.hImgWidth} transition-all duration-300 hover:shadow-lg ${item.shadow}`} src={item.img} alt="Project Cover Image" />
                                 </div>
                                 <div className={`md:hidden border m-5 rounded ${item.bTheme} ${item.bgTheme} md:mt-20 justify-center flex items-center backdrop-blur-[1px]`}>
-                                    <img className={`p-5 rounded ${item.mImgWidth}`} src={item.img} alt="No Image" />
+                                    <img className={`p-5 rounded ${item.mImgWidth}`} src={item.img} alt="Project Cover Image" />
                                 </div>
                             </React.Fragment>
                             :
                             <React.Fragment key={index}>
                                 <div className={`hidden border m-5 rounded ${item.bTheme} ${item.bgTheme} mt-20 justify-center md:flex items-center backdrop-blur-[1px]`}>
-                                    <img className={`rounded ${item.imgWidth} ${item.hImgWidth} transition-all duration-300 hover:shadow-lg ${item.shadow}`} src={item.img} alt="" />
+                                    <img className={`rounded ${item.imgWidth} ${item.hImgWidth} transition-all duration-300 hover:shadow-lg ${item.shadow}`} src={item.img} alt="Project Cover Image" />
                                 </div>
                                 <div className='font-semibold'>
                                     <h2 className={`${item.textTheme} text-base md:text-3xl font-bold pt-10 md:pt-20`}>{item.title}</h2>
@@ -178,7 +178,7 @@ const WorkSection = () => {
                                     </div>
                                 </div>
                                 <div className={`md:hidden border m-5 rounded ${item.bTheme} ${item.bgTheme} md:mt-20 justify-center flex items-center backdrop-blur-[1px]`}>
-                                    <img className={`p-5 rounded ${item.mImgWidth}`} src={item.img} alt="" />
+                                    <img className={`p-5 rounded ${item.mImgWidth}`} src={item.img} alt="Project Cover Image" />
                                 </div>
                             </React.Fragment>
                     ))}
