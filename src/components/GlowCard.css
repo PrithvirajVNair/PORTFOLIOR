@@ -16,14 +16,9 @@
     width: calc(100% + 4px);
     top: -2px;
     left: -2px;
-
     position: absolute;
-    /* top: 0;
-  left: 0; */
     border-radius: inherit;
-    background: radial-gradient(260px circle at var(--x, 0) var(--y, 0),
-            rgba(237, 255, 72, 0.1),
-            transparent 40%);
+    background: radial-gradient(560px circle at var(--x, 0) var(--y, 0), rgba(237, 255, 72, 0.1), transparent 40%);
     opacity: 0;
     transition: all 0.2s ease-in-out;
 }
