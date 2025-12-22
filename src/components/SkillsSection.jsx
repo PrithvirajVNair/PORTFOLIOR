@@ -52,7 +52,7 @@ const SkillsSection = () => {
                         <GlowCard key={skill.name}>
                             <div className='flex flex-col items-center justify-center py-1 text-[9px] md:text-sm lg:text-md'>
                                 <div>
-                                    <img className='px-6' src={skill.PIC} alt={`${skill.name} logo`} />
+                                    <img className='px-6 2xl:px-10' src={skill.PIC} alt={`${skill.name} logo`} />
                                 </div>
                                 <p className='p-1'>{skill.name}</p>
                             </div>

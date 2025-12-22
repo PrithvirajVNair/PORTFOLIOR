@@ -8,7 +8,7 @@ const AboutSection = () => {
                 <h2 className='text-center text-yellow-200 text-xl'>ABOUT ME</h2>
             </div>
             <div className='grid md:grid-cols-2 py-10 lg:py-20 text-justify'>
-                <div className=' md:p-5 text-xs sm:text-sm md:text-base text-gray-400 font-semibold'>
+                <div className=' md:p-5 text-xs sm:text-sm md:text-base text-gray-400 font-semibold leading-relaxed'>
                     <p className='mb-10'>
                         Hi there! I'm <span className='text-yellow-200'>Prithviraj V Nair</span>, a Full Stack Developer who loves
                         building powerful,
@@ -27,8 +27,8 @@ const AboutSection = () => {
                         applications that make a difference.
                     </p>
                 </div>
-                <div>
-                    <img className='w-full' src={ABOUT} alt="About Section Image" />
+                <div className='flex justify-center items-center'>
+                    <img className='w-full 2xl:w-100' src={ABOUT} alt="About Section Image" />
                 </div>
             </div>
         </div>

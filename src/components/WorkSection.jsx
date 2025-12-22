@@ -68,7 +68,7 @@ const WorkSection = () => {
             bTheme: 'text-purple-200/10',
             shadow: 'shadow-purple-200/50',
             imgWidth: 'w-[200px]',
-            hImgWidth: 'hover:w-[250px]',
+            hImgWidth: 'hover:w-[240px]',
             mImgWidth: 'w-[100px]',
         },
         {
