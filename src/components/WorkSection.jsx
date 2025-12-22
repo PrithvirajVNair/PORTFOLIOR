@@ -123,9 +123,9 @@ const WorkSection = () => {
                             <React.Fragment key={index}>
                                 <div className='font-semibold'>
                                     <h2 className={`${item.textTheme} text-base md:text-3xl font-bold pt-10 md:pt-20`}>{item.title}</h2>
-                                    <p className='text-gray-400 text-xs md:text-base'>{item.description}</p>
-                                    <h3 className={`${item.textTheme} mt-5 underline`}>{item.kftitle}</h3>
-                                    <ul className='text-gray-400 list-disc ps-5 text-xs md:text-base'>
+                                    <p className='text-gray-400 text-xs md:text-base leading-relaxed'>{item.description}</p>
+                                    <h3 className={`${item.textTheme} mt-5 underline leading-relaxed`}>{item.kftitle}</h3>
+                                    <ul className='text-gray-400 list-disc ps-5 text-xs md:text-base leading-relaxed'>
                                         {
                                             item.kf.map((keyF, index) => (
                                                 <li key={index}>{keyF}</li>
@@ -157,9 +157,9 @@ const WorkSection = () => {
                                 </div>
                                 <div className='font-semibold'>
                                     <h2 className={`${item.textTheme} text-base md:text-3xl font-bold pt-10 md:pt-20`}>{item.title}</h2>
-                                    <p className='text-gray-400 text-xs md:text-base'>{item.description}</p>
-                                    <h3 className={`${item.textTheme} mt-5 underline`}>{item.kftitle}</h3>
-                                    <ul className='text-gray-400 list-disc ps-5 text-xs md:text-base'>
+                                    <p className='text-gray-400 text-xs md:text-base leading-relaxed'>{item.description}</p>
+                                    <h3 className={`${item.textTheme} mt-5 underline leading-relaxed`}>{item.kftitle}</h3>
+                                    <ul className='text-gray-400 list-disc ps-5 text-xs md:text-base leading-relaxed'>
                                         {
                                             item.kf.map((keyF, index) => (
                                                 <li key={index}>{keyF}</li>

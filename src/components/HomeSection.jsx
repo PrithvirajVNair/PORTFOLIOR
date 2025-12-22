@@ -1,6 +1,6 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEnvelope, faFile } from '@fortawesome/free-solid-svg-icons'
+import { faEnvelope, faFile, faLocationDot } from '@fortawesome/free-solid-svg-icons'
 import CV from '../assets/PRITHVIRAJ_RESUME_2025.pdf'
 import { faGithub, faLinkedinIn, faXTwitter } from '@fortawesome/free-brands-svg-icons'
 
@@ -13,12 +13,15 @@ const HomeSection = () => {
     after:transition-transform after:duration-300 hover:after:scale-x-100">Prithviraj V Nair</span>.</h2>
       <h2 className='text-3xl sm:text-5xl md:text-7xl lg:text-8xl py-5'>FULL STACK <br /> <span className='text-gray-400'>DEVELOPER</span></h2>
       <div>
-        <a href={CV} download='PRITHVIRAJ_RESUME_2025.pdf' className='inline-block text-xs md:text-base border py-2 px-3 rounded hover:bg-yellow-200 hover:text-black active:transform active:scale-95 duration-100 cursor-pointer' aria-label="Download Prithviraj V Nair Resume"><FontAwesomeIcon icon={faFile} className='me-3' />Resume</a>
+        <a href={CV} download='PRITHVIRAJ_RESUME_2025.pdf' className='inline-block text-xs md:text-base border py-2 px-3 rounded hover:bg-yellow-200 hover:text-black active:transform active:scale-95 duration-100 cursor-pointer backdrop-blur-[3px]' aria-label="Download Prithviraj V Nair Resume"><FontAwesomeIcon icon={faFile} className='me-3' />Resume</a>
       </div>
       <div className=''>
-        <a href="https://www.linkedin.com/in/prithvirajvnair" target='_blank' rel="noopener noreferrer" aria-label="LinkedIn Profile" className='text-white text-sm md:text-2xl border p-1 rounded me-2 hover:bg-yellow-200 hover:text-black'><FontAwesomeIcon icon={faLinkedinIn} /></a>
-        <a href="https://github.com/PrithvirajVNair" target='_blank' rel="noopener noreferrer" aria-label="GitHub Profile" className='text-white text-sm md:text-2xl border p-1 rounded mx-2 hover:bg-yellow-200 hover:text-black'><FontAwesomeIcon icon={faGithub} /></a>
-        <a href="https://x.com/PrithvirajVNair" target='_blank' rel="noopener noreferrer" aria-label="Twitter Profile" className='text-white text-sm md:text-2xl border p-1 rounded mx-2 hover:bg-yellow-200 hover:text-black'><FontAwesomeIcon icon={faXTwitter} /></a>
+        <a href="https://www.linkedin.com/in/prithvirajvnair" target='_blank' rel="noopener noreferrer" aria-label="LinkedIn Profile" className='text-white text-sm md:text-2xl border p-1 rounded me-2 hover:bg-yellow-200 hover:text-black backdrop-blur-[3px]'><FontAwesomeIcon icon={faLinkedinIn} /></a>
+        <a href="https://github.com/PrithvirajVNair" target='_blank' rel="noopener noreferrer" aria-label="GitHub Profile" className='text-white text-sm md:text-2xl border p-1 rounded mx-2 hover:bg-yellow-200 hover:text-black backdrop-blur-[3px]'><FontAwesomeIcon icon={faGithub} /></a>
+        <a href="https://x.com/PrithvirajVNair" target='_blank' rel="noopener noreferrer" aria-label="Twitter Profile" className='text-white text-sm md:text-2xl border p-1 rounded mx-2 hover:bg-yellow-200 hover:text-black backdrop-blur-[3px]'><FontAwesomeIcon icon={faXTwitter} /></a>
+      </div>
+      <div>
+        <p><span className='text-red-300 me-2 text-sm'><FontAwesomeIcon icon={faLocationDot} /></span>Location : Kochi</p>
       </div>
     </div>
   )

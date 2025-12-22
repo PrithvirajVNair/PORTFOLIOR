@@ -50,7 +50,7 @@ const SkillsSection = () => {
                 {
                     skills.map((skill) => (
                         <GlowCard key={skill.name}>
-                            <div className='flex flex-col items-center justify-center py-1 text-[9px] md:text-sm lg:text-md'>
+                            <div className='flex flex-col items-center justify-center py-1 text-[9px] md:text-sm lg:text-md 2xl:py-3'>
                                 <div>
                                     <img className='px-6 2xl:px-10' src={skill.PIC} alt={`${skill.name} logo`} />
                                 </div>

@@ -8,7 +8,7 @@ import { Bounce, toast, ToastContainer } from 'react-toastify';
 
 const ContactSection = () => {
     const [data, setData] = useState({ name: "", email: "", message: "" });
-    console.log(data);
+    // console.log(data);
 
 
     const copyClipboard = () => {
