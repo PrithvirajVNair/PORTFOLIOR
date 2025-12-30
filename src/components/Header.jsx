@@ -1,7 +1,6 @@
 import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useState } from 'react'
-
 const Header = () => {
 
     const navBarList = [
@@ -24,7 +23,7 @@ const Header = () => {
                     <a className='text-2xl md:text-4xl' href="#home">PVN<span className='text-yellow-200'>.</span></a>
                 </div>
                 <div className='hidden sm:block absolute left-1/2 -translate-x-1/2'>
-                    <ul className='hidden md:flex justify-center items-center h-15 rounded-lg bg-white/5 ' style={{ backdropFilter: 'blur(4px)' }} >
+                    <ul className='hidden md:flex justify-center items-center h-15 rounded-lg bg-white/10 ' style={{ backdropFilter: 'blur(4px)' }} >
                         {
                             navBarList.map((nav) => (
                                 <li key={nav.text} className='px-5 text-lg font-bold'>
@@ -59,7 +58,7 @@ const Header = () => {
                 </ul>
                 <div></div>
             </div>
-        </nav>
+        </nav >
     )
 }
 

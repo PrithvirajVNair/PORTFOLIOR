@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useMemo } from 'react'
 import Header from '../components/Header'
 import HomeSection from '../components/HomeSection'
 import AboutSection from '../components/AboutSection'
@@ -10,13 +10,13 @@ import Footer from '../components/Footer'
 const Home = () => {
   return (
     <>
-        <Header/>
-        <HomeSection/>
-        <AboutSection/>
-        <SkillsSection/>
-        <WorkSection/>
-        <ContactSection/>
-        <Footer/>
+      <Header />
+      <HomeSection />
+      <AboutSection />
+      <SkillsSection />
+      <WorkSection />
+      <ContactSection />
+      <Footer />
     </>
   )
 }

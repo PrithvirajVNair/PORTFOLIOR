@@ -21,12 +21,57 @@ import AS from '../assets/icons8-android-studio-480.png'
 import W1 from '../assets/login.jpg'
 import EJS from '../assets/icons8-express-js-480.png'
 import W2 from '../assets/Screenshot 2025-08-08 131856.png'
-
+import W3 from '../assets/mslist.png'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faDiamondTurnRight } from '@fortawesome/free-solid-svg-icons'
+import { faGithub } from '@fortawesome/free-brands-svg-icons'
 
 
 const WorkSection = () => {
 
     const work = [
+        {
+            img: W3,
+            title: '-MS List',
+            description: 'MS List is a MERN-stack movie and show discovery platform that uses AI-inspired content similarity to deliver personalized recommendations. It features watchlists, user ratings, comments, and automatically generated AI summaries, providing a clean and interactive alternative to traditional genre-based browsing.',
+            kftitle: 'Key Features:',
+            kf: [
+                'AI-Inspired Recommendation System using content embeddings to suggest similar movies and shows from the database.',
+                'Personalized Watchlist (MS List) allowing users to add, rate, track status, and manage viewing progress.',
+                'Automatic AI Summary Generation that creates concise, one-line descriptions for each title.',
+                'User Ratings & Global Score Calculation where individual ratings are aggregated into an overall show score.',
+                'User Commenting Feature allowing authenticated users to post comments on individual movies and shows.',
+                'Admin Dashboard with CRUD Operations to manage movies, genres, users, and platform content.',
+                'Responsive & Scalable MERN Architecture built with React, Node.js, Express, and MongoDB for smooth UX and performance.'
+            ],
+            techstack: [
+                {
+                    timg: MDB,
+                    ttitle: "MongoDB"
+                },
+                {
+                    timg: EJS,
+                    ttitle: "ExpressJS"
+                },
+                {
+                    timg: RJS,
+                    ttitle: "ReactJS"
+                },
+                {
+                    timg: NJS,
+                    ttitle: "NodeJS"
+                }
+            ],
+            textTheme: 'text-blue-200',
+            bgTheme: 'bg-blue-200/20',
+            bTheme: 'text-blue-200/10',
+            shadow: 'shadow-blue-200/50',
+            imgWidth: 'w-[500px]',
+            hImgWidth: 'hover:w-[540px]',
+            mImgWidth: 'w-[300px]',
+            GitHub: "",
+            Demo: "https://mslist-black.vercel.app"
+        },
         {
             img: W1,
             title: '-APTIQ',
@@ -70,6 +115,8 @@ const WorkSection = () => {
             imgWidth: 'w-[200px]',
             hImgWidth: 'hover:w-[240px]',
             mImgWidth: 'w-[100px]',
+            GitHub: "https://github.com/1mad-hav1/APTIQ-Aptitude-Training-App",
+            Demo: "#"
         },
         {
             img: W2,
@@ -106,7 +153,9 @@ const WorkSection = () => {
             bTheme: 'text-cyan-200/10',
             shadow: 'shadow-cyan-200/50',
             imgWidth: 'w-[400px]',
-            hImgWidth: 'hover:w-[450px]'
+            hImgWidth: 'hover:w-[450px]',
+            GitHub: "https://github.com/PrithvirajVNair/FSD-Final-main",
+            Demo: "https://spendsence.vercel.app"
         },
     ]
 
@@ -142,17 +191,22 @@ const WorkSection = () => {
                                             ))
                                         }
                                     </div>
+                                    <div className='flex justify-between items-center px-5'>
+                                        <a href={item.GitHub} target='_blank' className='bg-white/15 py-1 px-2 backdrop-blur-3xl text-xs md:text-base rounded'><FontAwesomeIcon icon={faGithub} className='me-1' />GitHub</a>
+                                        <a href={item.Demo} target='_blank' className='bg-white/15 py-1 px-2 backdrop-blur-3xl text-xs md:text-base rounded'><FontAwesomeIcon icon={faDiamondTurnRight} className='me-1' />Demo</a>
+                                    </div>
+
                                 </div>
-                                <div className={`hidden border m-5 rounded ${item.bTheme} ${item.bgTheme} mt-20 justify-center md:flex items-center backdrop-blur-[1px]`}>
+                                <div className={`hidden border m-5 rounded ${item.bTheme} ${item.bgTheme} mt-20 justify-center md:flex items-center backdrop-blur-2xl`}>
                                     <img className={`rounded ${item.imgWidth} ${item.hImgWidth} transition-all duration-300 hover:shadow-lg ${item.shadow}`} src={item.img} alt="Project Cover Image" />
                                 </div>
-                                <div className={`md:hidden border m-5 rounded ${item.bTheme} ${item.bgTheme} md:mt-20 justify-center flex items-center backdrop-blur-[1px]`}>
+                                <div className={`md:hidden border m-5 rounded ${item.bTheme} ${item.bgTheme} md:mt-20 justify-center flex items-center backdrop-blur-2xl`}>
                                     <img className={`p-5 rounded ${item.mImgWidth}`} src={item.img} alt="Project Cover Image" />
                                 </div>
                             </React.Fragment>
                             :
                             <React.Fragment key={index}>
-                                <div className={`hidden border m-5 rounded ${item.bTheme} ${item.bgTheme} mt-20 justify-center md:flex items-center backdrop-blur-[1px]`}>
+                                <div className={`hidden border m-5 rounded ${item.bTheme} ${item.bgTheme} mt-20 justify-center md:flex items-center backdrop-blur-2xl`}>
                                     <img className={`rounded ${item.imgWidth} ${item.hImgWidth} transition-all duration-300 hover:shadow-lg ${item.shadow}`} src={item.img} alt="Project Cover Image" />
                                 </div>
                                 <div className='font-semibold'>
@@ -176,8 +230,12 @@ const WorkSection = () => {
                                             ))
                                         }
                                     </div>
+                                    <div className='flex justify-between items-center px-5'>
+                                        <a href={item.GitHub} target='_blank' className='bg-white/15 py-1 px-2 backdrop-blur-3xl text-xs md:text-base rounded'><FontAwesomeIcon icon={faGithub} className='me-1' />GitHub</a>
+                                        <a href={item.Demo} target='_blank' className='bg-white/15 py-1 px-2 backdrop-blur-3xl text-xs md:text-base rounded'><FontAwesomeIcon icon={faDiamondTurnRight} className='me-1' />Demo</a>
+                                    </div>
                                 </div>
-                                <div className={`md:hidden border m-5 rounded ${item.bTheme} ${item.bgTheme} md:mt-20 justify-center flex items-center backdrop-blur-[1px]`}>
+                                <div className={`md:hidden border m-5 rounded ${item.bTheme} ${item.bgTheme} md:mt-20 justify-center flex items-center backdrop-blur-2xl`}>
                                     <img className={`p-5 rounded ${item.mImgWidth}`} src={item.img} alt="Project Cover Image" />
                                 </div>
                             </React.Fragment>
