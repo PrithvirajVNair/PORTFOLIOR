@@ -118,45 +118,45 @@ const WorkSection = () => {
             GitHub: "https://github.com/1mad-hav1/APTIQ-Aptitude-Training-App",
             Demo: "#"
         },
-        {
-            img: W2,
-            title: '-SPEND SENSE',
-            description: 'SpendSense is a modern expense tracking application built using the MERN stack, designed to help users manage their finances efficiently. The app offers an intuitive interface, real-time data handling, and insightful visualizations to promote better spending habits.',
-            kftitle: 'Key Features:',
-            kf: [
-                'Expense & Income Tracking.',
-                'Interactive Data Visualization.',
-                'Category Management.',
-                'Persistent Data Storage.',
-                'Responsive UI.'
-            ],
-            techstack: [
-                {
-                    timg: MDB,
-                    ttitle: "MongoDB"
-                },
-                {
-                    timg: EJS,
-                    ttitle: "ExpressJS"
-                },
-                {
-                    timg: RJS,
-                    ttitle: "ReactJS"
-                },
-                {
-                    timg: NJS,
-                    ttitle: "NodeJS"
-                },
-            ],
-            textTheme: 'text-cyan-200',
-            bgTheme: 'bg-cyan-200/20',
-            bTheme: 'text-cyan-200/10',
-            shadow: 'shadow-cyan-200/50',
-            imgWidth: 'w-[400px]',
-            hImgWidth: 'hover:w-[450px]',
-            GitHub: "https://github.com/PrithvirajVNair/FSD-Final-main",
-            Demo: "https://spendsence.vercel.app"
-        },
+        // {
+        //     img: W2,
+        //     title: '-SPEND SENSE',
+        //     description: 'SpendSense is a modern expense tracking application built using the MERN stack, designed to help users manage their finances efficiently. The app offers an intuitive interface, real-time data handling, and insightful visualizations to promote better spending habits.',
+        //     kftitle: 'Key Features:',
+        //     kf: [
+        //         'Expense & Income Tracking.',
+        //         'Interactive Data Visualization.',
+        //         'Category Management.',
+        //         'Persistent Data Storage.',
+        //         'Responsive UI.'
+        //     ],
+        //     techstack: [
+        //         {
+        //             timg: MDB,
+        //             ttitle: "MongoDB"
+        //         },
+        //         {
+        //             timg: EJS,
+        //             ttitle: "ExpressJS"
+        //         },
+        //         {
+        //             timg: RJS,
+        //             ttitle: "ReactJS"
+        //         },
+        //         {
+        //             timg: NJS,
+        //             ttitle: "NodeJS"
+        //         },
+        //     ],
+        //     textTheme: 'text-cyan-200',
+        //     bgTheme: 'bg-cyan-200/20',
+        //     bTheme: 'text-cyan-200/10',
+        //     shadow: 'shadow-cyan-200/50',
+        //     imgWidth: 'w-[400px]',
+        //     hImgWidth: 'hover:w-[450px]',
+        //     GitHub: "https://github.com/PrithvirajVNair/FSD-Final-main",
+        //     Demo: "https://spendsence.vercel.app"
+        // },
     ]
 
     return (
